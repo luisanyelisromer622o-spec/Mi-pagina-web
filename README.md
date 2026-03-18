@@ -1,64 +1,58 @@
-# Mi-pagina-web
-C<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV</title>
+<title>Currículum - Luisanyelis González</title>
 
 <style>
 body{
-    font-family: Arial;
-    background:#eaeaea;
-    padding:20px;
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#f4f4f4;
 }
 
-.cv{
-    max-width:800px;
+.container{
+    max-width:900px;
     margin:auto;
     background:white;
     padding:30px;
 }
 
-/* HEADER */
-.top{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
+header{
+    background:#7b3fe4;
+    color:white;
+    padding:20px;
+    text-align:center;
 }
 
-.foto{
-    width:120px;
-    height:140px;
-    object-fit:cover;
-    border:1px solid #ccc;
+h1{
+    margin:0;
 }
 
-/* COLUMNAS */
-.contenido{
-    display:flex;
-    gap:40px;
+section{
+    margin-top:25px;
 }
 
-.col{
-    flex:1;
-}
-
-/* TITULOS */
 h2{
-    border-bottom:2px solid black;
+    color:#7b3fe4;
+    border-bottom:2px solid #7b3fe4;
     padding-bottom:5px;
-    margin-top:20px;
 }
 
-/* LISTAS */
 ul{
     padding-left:20px;
 }
 
-li{
-    margin-bottom:5px;
+.contacto p{
+    margin:5px 0;
+}
+
+.info-personal{
+    background:#f9f9f9;
+    padding:15px;
+    border-left:4px solid #7b3fe4;
 }
 </style>
 
@@ -66,77 +60,31 @@ li{
 
 <body>
 
-<div class="cv">
+<div class="container">
 
-<!-- HEADER -->
-<div class="top">
-    <div>
-        <h1>Luisanyelis González</h1>
-        <p>Estudiante de Informática</p>
-        <p>📞 04242645512</p>
-        <p>📧 luisanyelisromer622o@gmail.com</p>
-    </div>
+<header>
+<h1>Luisanyelis González</h1>
+<p>Estudiante de Informática</p>
+<img src="./assets/perfil.jpg" style="height: 210px; width: 210px; border-radius: 20px;">
+</header>
 
-    <img src="https://via.placeholder.com/120x140" class="foto">
-</div>
+<section class="contacto">
+<h2>Contacto</h2>
+<p>📞 04242645512</p>
+<p>📧 luisanyelisromer622o@gmail.com</p>
+</section>
 
-<!-- CONTENIDO -->
-<div class="contenido">
+<section>
+<h2>Sobre mí</h2>
+<p>
+Estudiante de Informática proactivo y con gran capacidad de aprendizaje autodirigido.
+Combino una sólida base en principios informáticos con creatividad para la resolución
+de problemas y la generación de contenido. Poseo conocimientos en gestión y
+optimización de redes sociales, buscando aplicar mis habilidades técnicas en un
+entorno profesional desafiante que fomente la innovación y el crecimiento continuo.
+</p>
+</section>
 
-    <!-- IZQUIERDA -->
-    <div class="col">
-
-        <h2>💼 Experiencia Laboral</h2>
-
-        <p><strong>Community Manager (Freelance)</strong></p>
-        <p>2023 - Actualidad</p>
-        <ul>
-            <li>Gestión de redes sociales</li>
-            <li>Creación de contenido</li>
-            <li>Interacción con clientes</li>
-        </ul>
-
-        <p><strong>Asistente</strong></p>
-        <p>2022 - 2023</p>
-        <ul>
-            <li>Organización de tareas</li>
-            <li>Apoyo administrativo</li>
-        </ul>
-
-        <h2>💡 Habilidades</h2>
-        <ul>
-            <li>Creatividad</li>
-            <li>Trabajo en equipo</li>
-            <li>Aprendizaje rápido</li>
-            <li>Manejo de redes sociales</li>
-        </ul>
-
-    </div>
-
-    <!-- DERECHA -->
-    <div class="col">
-
-        <h2>🎓 Educación</h2>
-        <p><strong>U.E.N "Dr Eduardo Rísquez"</strong></p>
-        <p>Bachiller en proceso</p>
-
-        <h2>🌎 Idiomas</h2>
-        <ul>
-            <li>Español (nativo)</li>
-            <li>Inglés (básico)</li>
-        </ul>
-
-        <h2>🧠 Sobre mí</h2>
-        <p>
-        Estudiante de Informática con gran capacidad de aprendizaje, creatividad
-        y motivación para crecer profesionalmente.
-        </p>
-
-    </div>
-
-</div>
-
-</div>
-
-</body>
-</html>
+<section>
+<h2>Formación Académica</h2>
+<p><strong>U.E.N "Dr Eduardo Rísquez"</strong></p>
